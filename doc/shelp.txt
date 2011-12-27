@@ -1,0 +1,83 @@
+*shelp*    Plugin for customer vim's toolbar and popup menu
+
+For Vim version 7.0 and above
+"Author: Jia Wei<ayheos@gmail.com>
+"Date: 2011/12/17
+"Release version: 0.9.1
+
+ 1 Overview                                            |shelp-introduction|
+ 2 Installation                                        |shelp-install|
+       2.1 Install
+       2.2 Uninstall
+ 3 features and howto use                              |shelp-howto|
+       3.1 Customer popup menu				|shelp-popup|
+       3.2 Customer toolbar                           |shelp-toolbar|
+ 4 Bug report~                                         |shelp-bug|
+ 5 License                                             |shelp-license|
+ 6 Changelog                                           |shelp-changlog|
+
+==============================================================================
+1. Overview~                         *shelp-introduction*
+
+The "shelp" plugin is a plugin for Vim that provides the following features to 
+allow you to efficiently customer vim's popup menu and toolbar.  
+This ability can help you invoke some develop tools such as shell and python easily.
+
+==============================================================================
+2. Installation~                     *shelp-install*
+
+2.1 Install
+
+1) Download the shelp.zip file and unzip the files to the $HOME/.vim or
+the $HOME/vimfiles or the $VIM/vimfiles directory. After this step, you should
+have the following five files (the directory structure should be preserved):
+
+* $HOME/.vim/plugin/shelp.vim - customer plugin fuctions.
+* $HOME/.vim/doc/shelp.txt - help document in English.
+* $HOME/.vim/bitmaps/*.bmp - sample icon files
+
+Don't forget to open the file and Use ":helptags ." to install help tag.
+
+2.2 Uninstall
+
+To uninstall the shelp plugin, remove the files listed above directly.
+
+==============================================================================
+3. features and howto use                                   *shelp-howto*
+
+After the install, please type:help shelp
+
+3.1 Customer popup menu                     *shelp-popup*
+    <Leader>ri: add a new menu item to your popup menu.
+    <Leader>rd: delete a menu item from your popup menu.
+
+3.2 Customer toolbar                     *shelp-toolbar*
+    <Leader>rI: add a new menu item to your toolbar.
+    <Leader>rD: delete a menu item from your toolbar. 
+
+Notice: 
+1) If you type the name begin with '!', it points to external tool in
+    your system's path, else it points to a vim internal command.
+2) If you type the name ends with '!', no arguments needed.
+2) If you customer the toolbar, you must prepare a 18*18 bmp picture for
+    windows or xpm for linux if you do not want to use the vim default icon.
+3) When the result is produced, the content is copied to the clipboard.
+4) When customer menu or toolbar, please ensure the shelp.vim is not opened.
+
+==============================================================================
+4. Bug report~                                                 *shelp-bug*
+
+It's welcome to report bug to me and it's a very import way to improve
+shelp, you could report bug to: 
+    ayheos@gmail.com
+
+==============================================================================
+5. License~                         *shelp-license*
+
+GPL.
+
+==============================================================================
+6. Changelog~                             *shelp-changlog*
+
+==============================================================================
+vim:tw=78:ts=8:noet:ft=txt:

@@ -1,0 +1,17 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3860
+
+The "shelp" plugin is a plugin for Vim that provides the features to 
+allow you to efficiently customer vim's popup menu and toolbar.  
+This ability can help you invoke some develop tools such as shell and python easily.
+
+
+After the install, please type:help shelp
+
+Customer popup menu
+    <Leader>ri: add a new menu item to your popup menu.
+    <Leader>rd: delete a menu item from your popup menu.
+
+Customer toolbar
+    <Leader>rI: add a new menu item to your toolbar.
+    <Leader>rD: delete a menu item from your toolbar. 
+
